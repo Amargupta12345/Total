@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Wellness</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+ {% extends 'base.html' %}
+ {% block content %}
+    <h1>hello world$$$$$----{{name}}</h1>
+    
+<form action="add" method="post">
+    {%csrf_token%}
+    
+     Enter First no  :-
+    <input type="text" name='name1' placeholder="First no"><br>
+     Enter Second no :-
+    <input type="text" name='name2' placeholder="second no"><br>
+    <input type="submit" name="submit">
+
+
+
+</form>
+
+
+
+</body>
+{%endblock%}
+
+</html>
